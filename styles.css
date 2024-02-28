@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2929;
+    margin: 20px;
+}
+.heading{
+    text-align: center;
+    text-decoration:none;
+    color: #63db34;
+}
+
+.content {
+    position: relative;
+    text-align:center;
+    margin-top: 10px;
+    
+}
+
+.content img {
+    max-width: 100%;
+    max-height: 500vh; /* Adjust this value as needed */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: fit-content;
+
+}
+
+#tabs-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #2d8e3e;
+    border-radius: 8px 8px 8px 8px;
+    position: relative;
+}
+.tab-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.url-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+.url-input:hover {
+    border-color: #3498db;
+}
+
+.url-input:focus {
+    border-color: #db4b23;
+}
+
+.tab:hover {
+    background-color: #191c1a;
+}
+
+#add-tab {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 0 0 8px 8px;
+}
+
+.close-tab {
+    background-color: #e74c3c;
+    color: white;
+    border:#30bd5d;
+    padding: 3px;
+    text-align: right;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 40%;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.close-tab:hover {
+    background-color: #c0392b;
+}
+.tab .close-tab {
+    visibility: hidden;
+}
+
+.tab:hover .close-tab {
+    visibility: visible;
+}
